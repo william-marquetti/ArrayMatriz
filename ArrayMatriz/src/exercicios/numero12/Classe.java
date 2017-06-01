@@ -16,17 +16,25 @@ public class Classe {
 		arrayBoolean[0] = true;
 		arrayBoolean[1] = false;
 		arrayBoolean[2] = true;
+		boolean todosVerdadeiros = true;
 		
-		for ( int aux = 0; aux <= arrayBoolean.length-1; aux++ ){
+		for ( int aux = 0; aux < arrayBoolean.length; aux++ ){
 			
-			for ( int aux2 = 1; aux2 <= arrayBoolean.length-1; aux2++){
+			for ( int aux2 = 0; aux2 < arrayBoolean.length; aux2++){
 				
-				
-				
+				if ( aux != aux2 && !(arrayBoolean[aux] || arrayBoolean[aux2])){
+					todosVerdadeiros = false;
+				}				
 				
 			}
 		}
 		
+		if (todosVerdadeiros){
+			System.out.println("1");
+		}else{
+			System.out.println("2");
+		}
+			
 	}
 
 }
