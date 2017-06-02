@@ -15,13 +15,13 @@ public class Classe {
 		
 		int[] numeros = new int[6];
 
-		numeros[0] = 1;
-		numeros[1] = 2;
-		numeros[2] = 3;
-		numeros[3] = 4;
-		numeros[4] = 5;
-		numeros[5] = 6;
-
+		for ( int aux = 0; aux < numeros.length; aux++ ){
+			numeros[aux] = aux+1;
+			System.out.print(" "+ numeros[aux]);
+		}
+		
+		System.out.println();
+		
 		for ( int aux = 0; aux < numeros.length; aux++ ){
 			
 			if ( numeros[aux] % 2 == 0 ){
@@ -30,6 +30,14 @@ public class Classe {
 				
 			}	
 		}
+		
+		System.out.println("Array alterado");
+		
+		for ( int aux = 0; aux < numeros.length; aux++ ){
+			System.out.print(" "+ numeros[aux]);
+			
+		}
+		
 			
 		scanner.close();
 	}
